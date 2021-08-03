@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+* :focus {
+    outline: none;
+}
+
+:root {
+    --box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    font-size: .9rem;
+    padding: 20px;
+    width: 100%;
+    background: rgb(248, 245, 245);
+    height: 60px;
+    margin: 0px;
+    box-shadow: var(--box-shadow);
+}
+
+.header__nav-left {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    left: 15px;
+    /* background: blue; */
+}
+
+.header__nav-link {
+    display: inline-flex;
+    padding: 5px;
+    margin: 5px;
+    color: #222;
+    /* background: orange; */
+}
+
+.header__nav-right {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+    /* background: blue; */
+}
+
+.header__nav-gmail {
+    display: inline-flex;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+    /* background: orange; */
+}
+
+.header__nav-images {
+    display: inline-flex;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+    /* background: yellow; */
+}
+
+.header__nav-grid {
+    display: inline-flex;
+    padding: 5px 5px 0px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    /* background: yellow; */
+}
+
+.header__nav-user {
+    display: inline-flex;
+    margin-left: 10px;
+    padding-left: 8px;
+    padding-top: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: green;
+    color: white;
+    font-size: 1.2rem;
+    top: 50px;
+    cursor: pointer;
+}
+
+.googlepage {
+    padding: 90px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    /* background: rgb(0, 247, 255); */
+    align-items: center;
+}
+
+.googlepage__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 275px;
+}
+
+.googlepage__search {
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 25px;
+    min-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15px;
+    box-shadow: var(--box-shadow);
+}
