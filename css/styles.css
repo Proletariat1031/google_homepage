@@ -28,6 +28,8 @@ body {
     height: 60px;
     margin: 0px;
     box-shadow: var(--box-shadow);
+    background: rgb(76, 158, 173);
+    background: linear-gradient(138deg, rgba(76, 158, 173, 1) 0%, rgba(96, 113, 240, 1) 37%, rgba(3, 3, 32, 1) 100%);
 }
 
 .header__nav-left {
@@ -35,6 +37,8 @@ body {
     cursor: pointer;
     top: 15px;
     left: 15px;
+    color: white;
+    font-weight: 700;
     /* background: blue; */
 }
 
@@ -42,7 +46,7 @@ body {
     display: inline-flex;
     padding: 5px;
     margin: 5px;
-    color: #222;
+    /* color: #222; */
     /* background: orange; */
 }
 
@@ -51,6 +55,8 @@ body {
     cursor: pointer;
     top: 15px;
     right: 15px;
+    color: white;
+    font-weight: 700;
     /* background: blue; */
 }
 
@@ -58,7 +64,7 @@ body {
     display: inline-flex;
     padding: 5px;
     margin: 0 5px;
-    color: #222;
+    color: white;
     /* background: orange; */
 }
 
@@ -94,10 +100,12 @@ body {
 }
 
 .googlepage {
+    /* background: rgb(27, 21, 204);
+    background: linear-gradient(180deg, rgba(27, 21, 204, 1) 0%, rgba(230, 246, 255, 1) 36%, rgba(27, 21, 204, 1) 100%); */
     padding: 90px 15px 20px;
+    height: 976px;
     display: flex;
     flex-direction: column;
-    /* background: rgb(0, 247, 255); */
     align-items: center;
 }
 
@@ -108,7 +116,24 @@ body {
     height: 275px;
 }
 
-.googlepage__search {
+.googlepage__search .fa-search {
+    color: black;
+    opacity: .5;
+    position: relative;
+    left: 40px;
+    top: 3px;
+    font-size: 1.2rem;
+}
+
+.googlepage__search .fa-microphone {
+    position: relative;
+    left: -40px;
+    top: 3px;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+.googlepage__search-field {
     border-radius: 25px;
     border: 1px solid rgb(0, 0, 0);
     padding: 25px;
@@ -117,4 +142,25 @@ body {
     margin-right: auto;
     height: 15px;
     box-shadow: var(--box-shadow);
+}
+
+::placeholder {
+    position: relative;
+    left: 30px;
+}
+
+.googlepage__buttons {
+    margin-top: 25px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.googlepage__search-btn {
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.googlepage__lucky-btn {
+    padding: 5px 10px;
 }
