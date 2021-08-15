@@ -30,6 +30,7 @@ body {
     box-shadow: var(--box-shadow);
     background: rgb(76, 158, 173);
     background: linear-gradient(138deg, rgba(76, 158, 173, 1) 0%, rgba(96, 113, 240, 1) 37%, rgba(3, 3, 32, 1) 100%);
+    text-transform: uppercase;
 }
 
 .header__nav-left {
